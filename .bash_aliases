@@ -31,5 +31,5 @@ alias bcomp='/mnt/c/Program\ Files/Beyond\ Compare\ 4/BCompare.exe'
 
 # Kubernetes
 ## Get admin password for argocd
-alias argocdPassword = 'kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d && echo'
+alias argocdPassword='kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d && echo'
 
