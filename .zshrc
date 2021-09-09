@@ -104,6 +104,10 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
+# Set autocompletion for AZ cli
+autoload -U +X bashcompinit && bashcompinit
+source /etc/bash_completion.d/azure-cli
+
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
