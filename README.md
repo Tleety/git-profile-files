@@ -38,3 +38,14 @@ then add this to the file:
 nameserver 8.8.8.8
 nameserver 8.8.4.4
 ```
+
+### WSL overrides /etc/resolv.conf
+run the following which will stop wsl from overriding the file and also make it readonly.
+```sh
+sudo rm /etc/resolv.conf
+sudo bash -c 'echo "nameserver 8.8.8.8" > /etc/resolv.conf
+sudo bash -c 'echo "nameserver 8.8.4.4" > /etc/resolv.conf
+sudo bash -c 'echo "[network]" > /etc/wsl.conf'
+sudo bash -c 'echo "generateResolvConf = false" >> /etc/wsl.conf'
+sudo chattr +i /etc/resolv.conf
+```
