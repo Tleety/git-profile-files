@@ -49,3 +49,7 @@ sudo bash -c 'echo "[network]" > /etc/wsl.conf'
 sudo bash -c 'echo "generateResolvConf = false" >> /etc/wsl.conf'
 sudo chattr +i /etc/resolv.conf
 ```
+### missing "/etc/bash_completion.d/azure-cli"
+This is because Azure cli is not installed.
+Install instructions for linux:
+https://docs.microsoft.com/sv-se/cli/azure/install-azure-cli-linux?pivots=apt
