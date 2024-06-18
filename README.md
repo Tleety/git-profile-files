@@ -4,6 +4,12 @@ A collection of some git and bash stuff i use.
 visibone is just a .minttyrc file in a folder.
 
 ## Installation
+Change home folder:
+ ```sh 
+ sudo vim /etc/passwd
+```
+Change home folder to something reasonable, such as `/mnt/c/workspace` if you want to use a windows folder.
+
 Install Zsh on the following link:
 https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH
 
